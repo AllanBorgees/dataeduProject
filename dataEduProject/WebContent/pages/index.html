@@ -7,12 +7,15 @@
 <link rel="stylesheet"
 	href="../resources/bootstrap/css/bootstrap.min.css">
 </head>
-<body >
+<body ng-app="app">
 
 
-	<div class="container">
+	<div class="container" data-ng-controller="dataeduController">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-lg-4 col-md-4 panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Aluno</h3>
+				</div>
 				<div class="radio">
 					<label><input type="radio" name="optradio">Conclusao</label>
 				</div>
@@ -21,75 +24,37 @@
 				</div>
 				<div class="radio disabled">
 					<label><input type="radio" name="optradio" disabled>Evasao
-						</label>
+					</label>
 				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Filtros</h3>
+					</div>
 
+				</div>
 			</div>
 
-
 		</div>
-
-		<div class="row"></div>
-
-
-
 
 		<div class="row">
-			<div class="col-lg-12">
-				<div class="col-md-3">
-					<ul class="list-unstyled">
-						<li>SmartFier</li>
-						<li><a href="#">Sobre</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contato</a></li>
-						<li><a href="#">Status do site</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="list-unstyled">
-						<li>Aplicativos</li>
-						<li><a href="#">Mac</a></li>
-						<li><a href="#">Windows</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Android</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="list-unstyled">
-						<li>Serviços</li>
-
-						<li><a href="#">Localizações</a></li>
-						<li><a href="#">Publicidade</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="list-unstyled">
-						<li>Documentação</li>
-						<li><a href="#">Ajuda</a></li>
-						<li><a href="#">API para desenvolvedor</a></li>
-					</ul>
-				</div>
-			</div>
+			<div ng-dropdown-multiselect="" options="getChekingdata"
+				selected-model="checkinModel"></div>
 		</div>
-		<hr style="background-color: #D3D1D1; height: 1px;"></hr>
 		<div class="row">
-			<div class="col-lg-12">
-				<div class="col-md-8">
-					<a href="#">Termos de uso</a> <a href="#">Privacidade</a> <a
-						href="#">Segurança</a>
-				</div>
-				<div class="col-md-4">
-					<p class="muted pull-right">© 2016 SmartFier.com. Todos os
-						direitos reservados</p>
-				</div>
-			</div>
+			<div ng-dropdown-multiselect="" options="getChekingdata"
+				selected-model="checkinModel"></div>
 		</div>
-
 	</div>
 
 
 
-
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
 	<script type="text/javascript" src="../resources/angular.min.js"></script>
+	<script type="text/javascript"
+		src="../resources/angularjs-dropdown-multiselect.js"></script>
+	<script type="text/javascript" src="../resources/dataedu.js"></script>
 </body>
 </html>
