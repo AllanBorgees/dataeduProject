@@ -27,25 +27,59 @@
 					</label>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 panel panel-primary">
-					<div class="panel-heading">
-						<h3 class="panel-title">Filtros</h3>
-					</div>
-
-				</div>
-			</div>
-
 		</div>
-
 		<div class="row">
-			<div ng-dropdown-multiselect="" options="getChekingdata"
-				selected-model="checkinModel"></div>
+			<div class="col-lg-4 col-md-4 panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Filtros</h3>
+				</div>
+				<h5>Região</h5>
+				<div class="row">
+					<div ng-dropdown-multiselect="" options="getChekingdata"
+						selected-model="checkinModel"></div>
+				</div>
+				<h5>Estados</h5>
+				<div class="row">
+					<div ng-dropdown-multiselect="" options="getChekingdataEstados"
+						selected-model="checkinModelEstados"></div>
+				</div>
+
+				<h5>Municípios</h5>
+				<div class="row">
+					<div ng-dropdown-multiselect="" options="getChekingdataMunicipio"
+						selected-model="checkinModelMunicipio"></div>
+				</div>
+
+				<h5>Portador Deficiência</h5>
+				<div class="row">
+					<div ng-dropdown-multiselect=""
+						options="getChekingdataPortadorDefiencia"
+						selected-model="checkinModelPortadorDeficiencia"></div>
+				</div>
+
+				<h5>Tipo de Ingresso</h5>
+				<div class="row">
+					<div ng-dropdown-multiselect=""
+						options="getChekingdataTipodeIngresso"
+						selected-model="checkinModelTipodeIngresso"></div>
+				</div>
+
+				<h5>Apoio</h5>
+				<div class="row">
+					<div ng-dropdown-multiselect="" options="getChekingdataApoio"
+						selected-model="checkinModelApoio"></div>
+				</div>
+
+				<h5>Bolsa</h5>
+				<div class="row">
+					<div ng-dropdown-multiselect="" options="getChekingdataBolsa"
+						selected-model="checkinModelBolsa"></div>
+				</div>
+
+			</div>
 		</div>
-		
+
 	</div>
-
-
 
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
