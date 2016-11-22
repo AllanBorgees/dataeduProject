@@ -3,7 +3,7 @@ package br.com.dataeduProject.factory;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-public class Conexao {
+public class ConexaoFactory {
 	
 	public static final String USUARIO="smartfier";
 	public static final String SENHA="smartfier";
@@ -19,7 +19,7 @@ public class Conexao {
 
 	public static void main(String[] args) {
 		try{
-			Connection conexao = Conexao.conectar();	
+			Connection conexao = ConexaoFactory.conectar();	
 			System.out.println("conexao realizada com sucesso");
 		}catch(SQLException e){
 			e.printStackTrace();
