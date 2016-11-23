@@ -9,7 +9,7 @@
 <body ng-controller="appController">
 	<div class="container">
 		<form class="form-inline" name="myform" role="form"
-			ng-submit="submitData()">
+			ng-submit="SubmitData()">
 			<div class="form-group">
 				<label>regioes</label>
 				<div ng-dropdown-multiselect="" extra-settings="regiaoSettings"
@@ -32,7 +32,7 @@
 				<tbody>
 					<tr ng-repeat="r in submittedRegioes">
 						<td>{{r.id}}</td>
-						<td>{{r.label}}</td>
+						<td>{{}}</td>
 					</tr>
 				</tbody>
 

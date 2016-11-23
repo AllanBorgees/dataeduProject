@@ -33,53 +33,87 @@
 				<div class="panel-heading">
 					<h3 class="panel-title">Filtros</h3>
 				</div>
+				<!-- R E G I A O -->
 				<h5>Região</h5>
 				<div class="row">
-					<div ng-dropdown-multiselect="" options="getChekingdata"
-						selected-model="checkinModel">
-						
-						</div>
+					<label>regioes</label>
+					<div ng-dropdown-multiselect="" extra-settings="regiaoSettings"
+						options="regioes" selected-model="regioesSelecionada"
+						checkboxes="true"></div>
+
 				</div>
+
+				<!-- E S T A D O S -->
+
 				<h5>Estados</h5>
 				<div class="row">
-					<div ng-dropdown-multiselect="" options="getChekingdataEstados"
-						selected-model="checkinModelEstados">
+					<div ng-dropdown-multiselect="" options="estados"
+						extra-settings="estadoSettings"
+						selected-model="estadosSelecionado" checkboxes="true"></div>
+					<hr>
+					<div class="row">
+						<button type="submit" class="btn btn-primary"
+							ng-click="submitDataEstado()">teste</button>
+					</div>
 
-						</div>
 				</div>
+
+				<!-- M U N I C I P I O  -->
+
 
 				<h5>Municípios</h5>
 				<div class="row">
-					<div ng-dropdown-multiselect="" options="getChekingdataMunicipio"
-						selected-model="checkinModelMunicipio"></div>
+					<div ng-dropdown-multiselect="" options="municipios"
+						selected-model="municipiosSelecionado"></div>
+					<hr>
+					<div class="row">
+						<button type="submit" class="btn btn-primary"
+							ng-click="submitDataMunicipio()">teste</button>
+					</div>
 				</div>
 
+				<!-- D E F I C I E N T E  -->
 				<h5>Portador Deficiência</h5>
 				<div class="row">
-					<div ng-dropdown-multiselect=""
-						options="getChekingdataPortadorDefiencia"
-						selected-model="checkinModelPortadorDeficiencia"></div>
+					<div ng-dropdown-multiselect="" options="deficientes"
+						selected-model="deficientesSelecionado"></div>
+					<div class="row">
+						<button type="submit" class="btn btn-primary"
+							ng-click="submitDataDeficiente()">teste</button>
+					</div>
 				</div>
-
+				<!-- T I P O   D E   I N G R E S S O  -->
+	
 				<h5>Tipo de Ingresso</h5>
 				<div class="row">
-					<div ng-dropdown-multiselect=""
-						options="getChekingdataTipodeIngresso"
-						selected-model="checkinModelTipodeIngresso"></div>
+					<div ng-dropdown-multiselect="" options="tipoDeIngressos"
+						selected-model="tipoDeIngressosSelecionado"></div>
+					<div class="row">
+						<button type="submit" class="btn btn-primary"
+							ng-click="submitDatatipoDeIngressos()">teste</button>
+					</div>
 				</div>
-
-				<h5>Apoio</h5>
+				<!-- A P O I O -->
+ 				<h5>Apoio</h5>
 				<div class="row">
-					<div ng-dropdown-multiselect="" options="getChekingdataApoio"
-						selected-model="checkinModelApoio"></div>
+					<div ng-dropdown-multiselect="" options="apoios"
+						selected-model="apoiosSelecionado"></div>
+					<div class="row">
+						<button type="submit" class="btn btn-primary"
+							ng-click="submitDataApoio()">teste</button>
+					</div>
 				</div>
-
-				<h5>Bolsa</h5>
+				<!-- B O L S A -->
+	 			<h5>Bolsa</h5>
 				<div class="row">
-					<div ng-dropdown-multiselect="" options="getChekingdataBolsa"
-						selected-model="checkinModelBolsa"></div>
+					<div ng-dropdown-multiselect="" options="bolsas"
+						selected-model="bolsasSelecionado"></div>
+					<div class="row">
+						<button type="submit" class="btn btn-primary"
+							ng-click="submitDataBolsa()">teste</button>
+					</div>
 				</div>
-
+ 
 			</div>
 		</div>
 
