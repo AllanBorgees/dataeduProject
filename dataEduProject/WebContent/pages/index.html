@@ -50,11 +50,6 @@
 					<div ng-dropdown-multiselect="" options="estados"
 						extra-settings="estadoSettings"
 						selected-model="estadosSelecionado" checkboxes="true"></div>
-					<hr>
-					<div class="row">
-						<button type="submit" class="btn btn-primary"
-							ng-click="submitDataEstado()">teste</button>
-					</div>
 
 				</div>
 
@@ -65,11 +60,6 @@
 				<div class="row">
 					<div ng-dropdown-multiselect="" options="municipios"
 						selected-model="municipiosSelecionado"></div>
-					<hr>
-					<div class="row">
-						<button type="submit" class="btn btn-primary"
-							ng-click="submitDataMunicipio()">teste</button>
-					</div>
 				</div>
 
 				<!-- D E F I C I E N T E  -->
@@ -77,43 +67,34 @@
 				<div class="row">
 					<div ng-dropdown-multiselect="" options="deficientes"
 						selected-model="deficientesSelecionado"></div>
-					<div class="row">
-						<button type="submit" class="btn btn-primary"
-							ng-click="submitDataDeficiente()">teste</button>
-					</div>
+					<div class="row"></div>
 				</div>
 				<!-- T I P O   D E   I N G R E S S O  -->
-	
+
 				<h5>Tipo de Ingresso</h5>
 				<div class="row">
 					<div ng-dropdown-multiselect="" options="tipoDeIngressos"
 						selected-model="tipoDeIngressosSelecionado"></div>
-					<div class="row">
-						<button type="submit" class="btn btn-primary"
-							ng-click="submitDatatipoDeIngressos()">teste</button>
-					</div>
+					<div class="row"></div>
 				</div>
 				<!-- A P O I O -->
- 				<h5>Apoio</h5>
+				<h5>Apoio</h5>
 				<div class="row">
 					<div ng-dropdown-multiselect="" options="apoios"
 						selected-model="apoiosSelecionado"></div>
-					<div class="row">
-						<button type="submit" class="btn btn-primary"
-							ng-click="submitDataApoio()">teste</button>
-					</div>
 				</div>
 				<!-- B O L S A -->
-	 			<h5>Bolsa</h5>
+				<h5>Bolsa</h5>
 				<div class="row">
 					<div ng-dropdown-multiselect="" options="bolsas"
 						selected-model="bolsasSelecionado"></div>
-					<div class="row">
-						<button type="submit" class="btn btn-primary"
-							ng-click="submitDataBolsa()">teste</button>
-					</div>
 				</div>
- 
+
+				<div class="row">
+					<button type="submit" class="btn btn-primary"
+						ng-click="submitDataTotal()">total</button>
+				</div>
+
 			</div>
 		</div>
 
