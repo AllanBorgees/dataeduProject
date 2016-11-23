@@ -314,7 +314,7 @@ app
 								}
 							}
 						}
-
+						$scope.regioesId=[];
 						console.log($scope.selecaoRegiao);
 
 						// /estados
@@ -331,7 +331,7 @@ app
 								}
 							}
 						}
-
+						$scope.estadosId=[];
 						console.log($scope.selecaoEstado);
 
 						// /municipios
@@ -348,7 +348,7 @@ app
 								}
 							}
 						}
-
+						$scope.municipiosId=[];
 						console.log($scope.selecaoMunicipio);
 						// /deficientes
 
@@ -366,7 +366,7 @@ app
 								}
 							}
 						}
-
+						$scope.deficientesId=[];
 						console.log($scope.selecaoDeficiente);
 						// /ingressos
 
@@ -382,7 +382,7 @@ app
 								}
 							}
 						}
-
+						$scope.tipoDeIngressosId=[];
 						console.log($scope.selecaoIngresso);
 
 						// /apoio
@@ -400,7 +400,7 @@ app
 								}
 							}
 						}
-
+						$scope.apoiosId=[];
 						console.log($scope.selecaoApoio);
 						// /bolsa
 						angular.forEach($scope.bolsasSelecionado, function(
@@ -417,7 +417,14 @@ app
 						}
 
 						console.log($scope.selecaoBolsa);
-
+					
+						$scope.selecaoBolsa=[];
+						$scope.selecaoApoio=[];
+						$scope.selecaoIngresso=[];
+						$scope.selecaoDeficiente=[];
+						$scope.selecaoMunicipio=[];
+						$scope.selecaoEstado=[];
+						$scope.selecaoRegiao=[];
 					};
 
 				});
