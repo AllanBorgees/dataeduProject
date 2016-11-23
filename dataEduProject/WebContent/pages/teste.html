@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet"
+	href="../resources/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="appController">
+	<div class="container">
+		<form class="form-inline" name="myform" role="form"
+			ng-submit="submitData()">
+			<div class="form-group">
+				<label>regioes</label>
+				<div ng-dropdown-multiselect="" extra-settings="regiaoSettings"
+					options="regioes" selected-model="regioesSelecionada"
+					checkboxes="true"></div>
+
+			</div>
+			<button type="submit" class="btn btn-primary">submit</button>
+		</form>
+
+		<div class="row" ng-if="submittedRegioes.length >0">
+			<h2>egioes selecionadaa</h2>
+			<table class="table table-responsive table-bordered">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>REGIAO</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="r in submittedRegioes">
+						<td>{{r.id}}</td>
+						<td>{{r.label}}</td>
+					</tr>
+				</tbody>
+
+
+			</table>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
+	<script type="text/javascript" src="../resources/angular.min.js"></script>
+	<script type="text/javascript"
+		src="../resources/angularjs-dropdown-multiselect.js"></script>
+	<script type="text/javascript" src="../resources/teste.js"></script>
+
+</body>
+
+</html>

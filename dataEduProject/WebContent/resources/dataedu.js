@@ -7,11 +7,7 @@ app
 		.controller(
 				'dataeduController',
 				function($scope, $http, urlBase) {
-					$scope.informacoes = null;
-					$scope.estacoes = null;
-					$scope.dado = null;
-					$scope.sensorDadosLista = null;
-					$scope.coluna = null;
+					$scope.camposSelecionados = [];
 					
 					$scope.checkinModel = []; 
 					$scope.getChekingdata = [ {id:
@@ -49,7 +45,9 @@ app
 					1, label: "Estagio"}, {id: 2, label: "Extensão"}, {id: 3, label: "Monitoria"}, {id: 4, label: "Pesquisas"}];
 					
 
-					
+						
+					console.log("ashjakshajksha");
+//					console($scope.chekinModel);
 					
 //					$scope.getChekingdata = [ {id:
 //					1, label: "David"}, {id: 2, label: "Jhon"}, {id: 3, label: "Danny"}];
